@@ -121,7 +121,16 @@ const router = createRouter({
                     name: 'icons',
                     component: () => import('@/views/utilities/Icons.vue')
                 },
-
+                {
+                    path: '/pages/timeline',
+                    name: 'timeline',
+                    component: () => import('@/views/pages/Timeline.vue')
+                },
+                {
+                    path: '/pages/empty',
+                    name: 'empty',
+                    component: () => import('@/views/pages/Empty.vue')
+                },
                 {
                     path: '/pages/crud',
                     name: 'crud',
@@ -134,7 +143,11 @@ const router = createRouter({
                 }
             ]
         },
-
+        {
+            path: '/landing',
+            name: 'landing',
+            component: () => import('@/views/pages/Landing.vue')
+        },
         {
             path: '/pages/notfound',
             name: 'notfound',
